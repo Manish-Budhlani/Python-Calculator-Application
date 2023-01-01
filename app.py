@@ -9,7 +9,7 @@ app = Flask(__name__) #app define or initialization of flask object app with nam
 def home_page(): #sample function
     return render_template('index.html')
 
-@app.route('/math', methods = ['POST']) #We need to specify /math in API URL to get this called
+@app.route('/math', methods = ['POST']) #We need to specify /math in API URL to get this called.
 def math_operation(): #sample function to perform math operation.
     if request.method == "POST":
         print('in math operation function')
