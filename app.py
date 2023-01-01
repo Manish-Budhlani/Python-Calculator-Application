@@ -10,7 +10,7 @@ def home_page(): #sample function
     return render_template('index.html')
 
 @app.route('/math', methods = ['POST']) #We need to specify /math in API URL to get this called
-def math_operation():
+def math_operation(): #sample function to perform math operation
     if request.method == "POST":
         print('in math operation function')
         operation = request.form['operation']
